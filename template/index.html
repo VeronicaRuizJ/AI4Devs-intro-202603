@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse String</title>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverso de cadena de texto</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<script src="script.js"></script>
+  <main class="contenedor">
+    <h1>Reverso de cadena de texto</h1>
+
+    <form id="formulario" novalidate>
+      <label for="entrada">Ingresa una cadena de texto (mínimo 3 caracteres, sin caracteres especiales):</label>
+      <input
+        type="text"
+        id="entrada"
+        name="entrada"
+        placeholder="Escribe aquí..."
+        autocomplete="off"
+      >
+      <p id="mensajeError" class="mensaje-error" aria-live="polite"></p>
+
+      <button type="button" id="botonEjecutar" class="boton-ejecutar oculto">Ejecutar</button>
+    </form>
+
+    <section class="resultado-contenedor">
+      <h2>Resultado:</h2>
+      <p id="resultado" class="resultado"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
